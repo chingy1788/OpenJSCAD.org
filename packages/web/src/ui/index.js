@@ -81,6 +81,11 @@ function init () {
       setElementHeight(editFrame, window.innerHeight + 'px')
     }
   })
+  
+  window.onbeforeunload = function ()
+  {
+      return '';
+  };
 
   if (menu) {
     const versionText = `Version ${version}`
